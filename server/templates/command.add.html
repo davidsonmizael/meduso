@@ -1,0 +1,74 @@
+{% extends 'layout.html' %}
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+	<div class="main">
+		<div class="section section-basic">
+			<div class="container">
+				<div class="title">
+					<h2>Add command</h2>
+				</div>
+				<div class="">
+					<!-- <div class="col-lg-3 col-sm-4">
+						<div class="form-group has-default">
+							<input type="text" class="form-control" placeholder="Destination">
+						</div>
+					</div> -->
+					<form action="#" id="frm" method="POST">
+						<div class="col-lg-12">
+							<div class="form-group">
+								<label for="dest" class="bmd-label-floating">Destination</label>
+								<textarea class="form-control" placeholder="" id="dest" name="dest" rows="3"></textarea>
+								<span class="bmd-help">IP separator by comma</span>
+							</div>
+						</div>
+
+						<div class="col-lg-12">
+							<div class="form-group">
+								<label for="command" class="bmd-label-floating">Command</label>
+								<textarea class="form-control" placeholder="" rows="3"></textarea>
+								<span class="bmd-help">Command to exec on slaves</span>
+							</div>
+						</div>
+
+						<div class="col-lg-12">
+							<div class="form-group">
+								<label for="version" class="bmd-label-floating">Version</label>
+								<input type="text" class="form-control" id="version" name="version">
+								<!-- <span class="bmd-help">Command Version</span> -->
+							</div>
+						</div>
+						
+						<div class="col-lg-12">
+							<div class="form-group">
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="radio" name="cmd_type" id="type1" value="value1"> Type #01
+										<span class="circle">
+											<span class="check"></span>
+										</span>
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="radio" name="cmd_type" id="type2" value="value2"> Type #02
+										<span class="circle">
+											<span class="check"></span>
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>		
+						
+						<div class="col-lg-12">
+							<a href="javascript:;" class="btn btn-success btn-block">Save</a>
+						</div>	
+					</form>		
+
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

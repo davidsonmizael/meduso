@@ -1,0 +1,1 @@
+pyinstaller -F --hidden-import=win32timezone run.py

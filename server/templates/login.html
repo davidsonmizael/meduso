@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+	<div style="background-image: url('/static/img/city.jpg'); background-size: cover;" class="section section-signup page-header-full">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 ml-auto mr-auto">
+					<div class="card card-signup">
+						<form method="POST" action="" class="form">
+							<div class="card-body">
+								<div class="input-group">
+									<div class="input-group-prepend"><span class="input-group-text"><i class="material-icons">person</i></span></div>
+									<input type="email" name="email" value="" placeholder="User" class="form-control"/>
+								</div>
+								<div class="input-group">
+									<div class="input-group-prepend"><span class="input-group-text"><i class="material-icons">lock_outline</i></span></div>
+									<input type="password" name="password" value="" placeholder="Pass" class="form-control"/>
+								</div>
+							</div>
+							<div class="card-footer justify-content-center">
+								<button type="submit" class="btn btn-success btn-lg">Login</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

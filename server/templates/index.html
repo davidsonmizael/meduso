@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+	<div class="main">
+		<div class="section section-basic">
+			<div class="container">
+				<div class="title">
+					<h2>Dashboard</h2>
+				</div>
+				<div class="alert alert-info">
+					<div class="container">
+						<div class="alert-icon"><i class="material-icons">info_outline</i></div>
+						<button type="button" data-dismiss="alert" aria-label="Close" class="close"><span aria-hidden="true"><i class="material-icons">clear</i></span></button><b>Info alert:</b> You've got some friends nearby, stop looking at your phone and find them...
+					</div>
+				</div>
+				<div class="alert alert-success">
+					<div class="container">
+						<div class="alert-icon"><i class="material-icons">check</i></div>
+						<button type="button" data-dismiss="alert" aria-label="Close" class="close"><span aria-hidden="true"><i class="material-icons">clear</i></span></button><b>Success Alert:</b> Yuhuuu! You've got your $11.99 album from The Weeknd
+					</div>
+				</div>
+				<div class="alert alert-warning">
+					<div class="container">
+						<div class="alert-icon"><i class="material-icons">warning</i></div>
+						<button type="button" data-dismiss="alert" aria-label="Close" class="close"><span aria-hidden="true"><i class="material-icons">clear</i></span></button><b>Warning Alert:</b> Hey, it looks like you still have the "copyright © 2015" in your footer. Please update it!
+					</div>
+				</div>
+				<div class="alert alert-danger">
+					<div class="container">
+						<div class="alert-icon"><i class="material-icons">error_outline</i></div>
+						<button type="button" data-dismiss="alert" aria-label="Close" class="close"><span aria-hidden="true"><i class="material-icons">clear</i></span></button><b>Error Alert:</b> Damn man! You screwed up the server this time. You should find a good excuse for your Boss...
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

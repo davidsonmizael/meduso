@@ -1,0 +1,7 @@
+flask
+requests
+wmi
+scapy
+pywin32
+pyautogui
+scapy
