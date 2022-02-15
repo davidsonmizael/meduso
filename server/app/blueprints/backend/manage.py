@@ -1,8 +1,8 @@
 import json
 from flask import Blueprint, request, jsonify, abort, Response
-from core.client import Client
-from core.command import Command
-from backend.communicator import activeClients, commandList
+from app.core.client import Client
+from app.core.command import Command
+from app.blueprints.backend.communicator import activeClients, commandList
 
 manage_blueprint = Blueprint('manage', __name__)
 

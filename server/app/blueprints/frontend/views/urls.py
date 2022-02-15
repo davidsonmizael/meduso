@@ -1,9 +1,9 @@
 import json
-from flask import Blueprint, request, jsonify, abort, Response, render_template
-from core.command import Command
+from flask import Blueprint, render_template
+from app.core.command import Command
 from flask.views import View
 
-dash_blueprint = Blueprint('dashboard', __name__,)
+dash_blueprint = Blueprint('dashboard', __name__)
 
 @dash_blueprint.route('/')
 def index():

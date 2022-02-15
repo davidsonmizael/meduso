@@ -1,0 +1,8 @@
+flask:
+  port: 8080
+  host: 0.0.0.0
+  debug: True
+
+jwt:
+  token_expiration_seconds: 86400 #1 day
+  rtoken_expiration_seconds: 86400 #1 day

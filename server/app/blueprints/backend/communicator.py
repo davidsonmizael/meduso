@@ -1,7 +1,6 @@
 import json
 from flask import Blueprint, request, jsonify, abort, Response, redirect
-from core.client import Client
-from core.command import Command
+from app.core import Client, Command
 
 comm_blueprint = Blueprint('comm', __name__)
 
