@@ -3,3 +3,4 @@ flask_jwt_extended
 pyyaml
 gunicorn
 python-dotenv
+pyjwt>=2.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
